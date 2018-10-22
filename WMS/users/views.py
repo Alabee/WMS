@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
+from users.forms import AdditionalInfo
 
 # Create your views here.
 def index(request):
@@ -8,19 +8,19 @@ def index(request):
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST) #instantiate the form and pass in the post data
+        form = AdditionalInfo(request.POST) #instantiate the form and pass in the post data
 
         if form.is_valid(): #data that is passed in is okay
             form.save() #creates a new user. Form is based off the user model.
-            username = form.cleaned_data['username']
-            password = form.cleaned_data['password1']
+            #username = form.cleaned_data['username']
+            #password = form.cleaned_data['password1']
             
-            user = authenticate(username = username, password = password)
+            #user = authenticate(username = username, password = password)
 
-            login(request, user)
+            #login(request, user)
             return redirect('index')
     else:
 
-        form = UserCreationForm()
+        form = AdditionalInfo()
     context = {'form': form}
     return render(request, 'registration/registration.html', context)
