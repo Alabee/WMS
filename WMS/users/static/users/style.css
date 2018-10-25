@@ -1,0 +1,39 @@
+body{
+    background-color: #F5F5F5;
+}
+
+.navbar{
+    background-color: #212121;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.nav-item{
+    padding: 10px;
+}
+.nav-link{
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #BDBDBD;
+}
+.navbar-text{
+    color: #fff;
+    font-size: 30px;
+}
+.logo{
+    width: 40px;
+}
+.jumbotron{
+    padding: 0.8rem 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+.banner img{
+    max-width:100%;
+    height:auto;
+    max-height:100%;
+ }
