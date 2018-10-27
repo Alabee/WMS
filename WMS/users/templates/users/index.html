@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'users/style.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'users/fontawesome.min.css' %}"
+    <link rel="stylesheet" href="{% static 'users/fontawesome.all.min.css' %}">
     <title>Home</title>
   </head>
   <body>
@@ -27,10 +27,10 @@
                 <a class="nav-link active" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
+                <a class="nav-link" href="#"><i class="fas fa-user"></i>Contact us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-home"></i>Sign in</a>
+                <a class="nav-link" href="#">Sign in</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sign up</a>
@@ -40,6 +40,11 @@
       </nav>
       <div class="banner">
           <img src="{% static 'users/images/home.jpg' %}">
+          <div class="center">
+              <h1>Writers Management System</h1>
+              <h4><i>"Manage your writers like a boss"</i></h4>
+              <button type="button" class="btn btn-primary btn-lg">Register</button>
+          </div>
       </div>
     </div>
           
@@ -47,12 +52,14 @@
 
       
     </div>
-    <div class="container">
+    <div class="container" style="text-align: center">
         <div class="jumbotron" style="text-align: center">
-          <h2>"Management is, above all, a practice where art, science, and craft meet"</h2>
+          <h4>"Management is, above all, a practice where art, science, and craft meet"</h4>
           <h6>- Henry Mintzberg -</h6>
         </div>
-
+        <div>
+          <h3>Why join us?</h3>
+        </div>
         
     </div>
     <!-- Optional JavaScript -->

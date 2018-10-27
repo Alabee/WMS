@@ -1,5 +1,5 @@
 /*!
- * Font Awesome Free 5.4.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.4.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 .fa,
@@ -1065,6 +1065,9 @@ readers do not read off random characters that represent icons */
 
 .fa-d-and-d:before {
   content: "\f38d"; }
+
+.fa-d-and-d-beyond:before {
+  content: "\f6ca"; }
 
 .fa-dashcube:before {
   content: "\f210"; }
@@ -2824,9 +2827,6 @@ readers do not read off random characters that represent icons */
 .fa-registered:before {
   content: "\f25d"; }
 
-.fa-rendact:before {
-  content: "\f3e4"; }
-
 .fa-renren:before {
   content: "\f18b"; }
 
@@ -3418,6 +3418,9 @@ readers do not read off random characters that represent icons */
 .fa-thermometer-three-quarters:before {
   content: "\f2c8"; }
 
+.fa-think-peaks:before {
+  content: "\f731"; }
+
 .fa-thumbs-down:before {
   content: "\f165"; }
 
@@ -3754,6 +3757,9 @@ readers do not read off random characters that represent icons */
 .fa-volume-up:before {
   content: "\f028"; }
 
+.fa-vr-cardboard:before {
+  content: "\f729"; }
+
 .fa-vuejs:before {
   content: "\f41f"; }
 
@@ -3853,6 +3859,9 @@ readers do not read off random characters that represent icons */
 .fa-wpforms:before {
   content: "\f298"; }
 
+.fa-wpressr:before {
+  content: "\f3e4"; }
+
 .fa-wrench:before {
   content: "\f0ad"; }
 
@@ -3918,3 +3927,33 @@ readers do not read off random characters that represent icons */
   overflow: visible;
   position: static;
   width: auto; }
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands'; }
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
