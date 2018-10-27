@@ -1,88 +1,31 @@
+{% extends 'users/base.html' %}
 {% load static %}
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% block content %}
+<div class="banner">
+  <img src="{% static 'users/images/home.jpg' %}">
+  <div class="center">
+      <h1>Writers Management System</h1>
+      <h4><i>"Manage your writers like a boss"</i></h4>
+      <button type="button" class="btn btn-primary btn-lg"><a href="{% url 'index' %}"></a>Register</button>
+  </div>
+</div>
+<div class="jumbotron" style="text-align: center">
+  <h4>"Management is, above all, a practice where art, science, and craft meet"</h4>
+  <h6>- Henry Mintzberg -</h6>
+</div>
+     
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'users/style.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'users/fontawesome.all.min.css' %}">
-    <title>Home</title>
-  </head>
-  <body onload="loaderFunction()">
-    <div id="loader">
-      <img src="{% static 'users/images/spinner.svg' %}" alt="Loader Animation">
-    </div>
-    <div id="content">
-        <div>
-          <nav class="navbar navbar-expand-md sticky-top">
-          <!--<a class="navbar-brand"><img class="logo" src="{% static 'users/images/logo.png' %}"></a>-->
-            <span class="navbar-text">WMS</span>
-            
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-user"></i>Contact us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sign in</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sign up</a>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="banner">
-              <img src="{% static 'users/images/home.jpg' %}">
-              <div class="center">
-                  <h1>Writers Management System</h1>
-                  <h4><i>"Manage your writers like a boss"</i></h4>
-                  <button type="button" class="btn btn-primary btn-lg">Register</button>
-              </div>
-          </div>
-        </div>
-              
-        
+<div class="container" style="text-align: center">
 
-          
-        
-        <div class="container" style="text-align: center">
-            <div class="jumbotron" style="text-align: center">
-              <h4>"Management is, above all, a practice where art, science, and craft meet"</h4>
-              <h6>- Henry Mintzberg -</h6>
-            </div>
-            <div>
-              <h3>Why join us?</h3>
-            </div>
-            
-        </div>
-    </div>
-    <script type="text/javascript">
-      var Start;
-
-      function loaderFunction(){
-        Start = setTimeout(showpage,2500);
-      }
-      function showpage(){
-        document.getElementById("loader").style.display="none";
-        document.getElementById("content").style.display="block";
-      }
-
-    </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
-</html>
+<div style="text-align: left">
+  <h3 style="text-align: center"><b>Why join us?</b></h3>
+  <ul>
+    <li>We brand you. By joining the club, you create your own firm and register your own writers</li>
+    <li>We facilitate easier communication with your writers</li>
+    <li>We provide a platform to assign orders with ease</li>
+    <li>Reports are generated at the click of a button. We reduse the hassle of manually generating
+      invoices and payment sheets
+    </li>
+  </ul>
+</div> 
+{% endblock %}
