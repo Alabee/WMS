@@ -60,6 +60,15 @@ body{
     margin-top: 10px;
 }
 
+#loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#content{
+    display: none;
+}
 
 @media (min-width: 769px) {
     #mainNav > ul > li:not(:last-child) {
